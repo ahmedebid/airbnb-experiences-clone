@@ -54,6 +54,7 @@ button {
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 /* -------------------------------------------- */
@@ -95,4 +96,36 @@ nav {
 .hero-description {
     width: 70%;
     margin-bottom: 15px;
+}
+
+/* Card */
+
+.card {
+    max-width: 176px;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-left: 35px;
+}
+
+.card-img {
+    border-radius: 9px;
+    margin-bottom: 8px;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+}
+
+.card-rating img {
+    width: 14px;
+    margin-right: 2px;
+}
+
+.card-rating span {
+    color: hsl(254 6% 58%);
+}
+
+.card-cost span {
+    font-weight: 600;
 }
