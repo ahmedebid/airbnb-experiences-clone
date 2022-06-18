@@ -1,0 +1,98 @@
+/* -------------------------------------------- */
+/* Reset                                        */
+/* -------------------------------------------- */
+
+/* Source: https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for buttons */
+button {
+  font: inherit;
+}
+
+/* -------------------------------------------- */
+/* General Styles                              */
+/* -------------------------------------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------------------------- */
+/* Specific Styles                              */
+/* -------------------------------------------- */
+
+/* Navigation Bar */
+
+nav {
+    box-shadow: 0px 3px 7.5px rgb(0 0 0 / 0.1);
+    padding: 22px 30px;
+}
+
+.logo {
+    width: 82px;
+}
+
+/* Hero Section */
+
+.hero-sec {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-image {
+    width: 85.5%;
+    align-self: center;
+    max-width: 400px;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-block: 32px 16px;
+}
+
+.hero-description {
+    width: 70%;
+    margin-bottom: 15px;
+}
