@@ -1,10 +1,16 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
-
-import profilePhoto from "./images/katie-zaferes.png";
+import data from "./data";
 
 export default function App() {
+    const cardElements = data.map(item =>  
+        <Card 
+            key={item.id} 
+            item={item} 
+        />
+    )
+    
     return (
         <>
             <header>
@@ -12,14 +18,9 @@ export default function App() {
             </header>
             <main>
                 <Hero />
-                <Card 
-                    img={profilePhoto}
-                    rating={5}
-                    reviewCount={6}
-                    country="USA"
-                    title="Life lessons with Katie Zaferes"
-                    price={136}
-                />
+                <div className="container">
+                    {cardElements}
+                </div>
             </main>
         </>
     )
